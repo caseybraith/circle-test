@@ -1,9 +1,5 @@
 pipeline:
   build:
-    image: python:$$PYTHON_VERSION
+    image: python:3.5.1-alpine
     commands:
       - python main.py
-
-  matrix:
-    PYTHON_VERSION:
-      - 3.6
