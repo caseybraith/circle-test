@@ -1,8 +1,9 @@
 kind: pipeline
+type: docker
 name: pingpong
 
 steps:
   - name: simple
-    image: python:3.5.1-alpine
+    image: python:latest
     commands:
       - python main.py
