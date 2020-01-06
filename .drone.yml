@@ -1,8 +1,9 @@
-build:
-  image: python:$$PYTHON_VERSION
-  commands:
-    - python main.py
+pipeline:
+  build:
+    image: python:$$PYTHON_VERSION
+    commands:
+      - python main.py
 
-matrix:
-  PYTHON_VERSION:
-    - 3.6
+  matrix:
+    PYTHON_VERSION:
+      - 3.6
