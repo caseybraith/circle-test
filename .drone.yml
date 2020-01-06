@@ -1,5 +1,8 @@
-pipeline:
-  build:
+kind: pipeline
+name: pingpong
+
+steps:
+  - name: simple
     image: python:3.5.1-alpine
     commands:
       - python main.py
